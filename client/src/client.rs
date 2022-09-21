@@ -16,9 +16,9 @@ use solana_sdk::transaction::Transaction;
 use circuit::initialize;
 
 const CONTRACT_SO_PATH: &str =
-    "/mnt/e/Programs/zklink/groth16-sol-verifier/target/deploy/contract.so";
+    "/workspaces/groth16-sol-verifier/target/deploy/contract.so";
 const CONTRACT_KEYPAIR_PATH: &str =
-    "/mnt/e/Programs/zklink/groth16-sol-verifier/target/deploy/contract-keypair.json";
+    "/workspaces/groth16-sol-verifier/target/deploy/contract-keypair.json";
 const SIZE: usize = 384;
 
 pub struct Client {
