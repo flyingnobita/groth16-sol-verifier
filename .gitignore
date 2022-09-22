@@ -9,3 +9,4 @@ Cargo.lock
 .env
 test-ledger/
 .DS_Store
+seed.md

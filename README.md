@@ -1,5 +1,17 @@
 # Groth16 verifier on Solana
 
+## Versions
+
+### devcontainer
+
+- Rust v1.56.1
+- Solana v1.9.0
+
+### MacOS
+
+- Rust v1.56.1
+- Solana v1.9.9
+
 This project is an implementation of the Groth16 zk-SNARK proving system on Solana.
 
 The project is consist of:

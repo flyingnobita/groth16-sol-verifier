@@ -16,9 +16,11 @@ use solana_sdk::transaction::Transaction;
 use circuit::initialize;
 
 const CONTRACT_SO_PATH: &str =
-    "/workspaces/groth16-sol-verifier/target/deploy/contract.so";
+    "/Users/jansonmak/Data/Project/zk/groth16-sol-verifier/target/deploy/contract.so";  // macos
+    // "/workspaces/groth16-sol-verifier/target/deploy/contract.so";  // devcontainer
 const CONTRACT_KEYPAIR_PATH: &str =
-    "/workspaces/groth16-sol-verifier/target/deploy/contract-keypair.json";
+    "/Users/jansonmak/Data/Project/zk/groth16-sol-verifier/target/deploy/contract-keypair.json";  // macos
+    // "/workspaces/groth16-sol-verifier/target/deploy/contract-keypair.json";  // devcontainer
 const SIZE: usize = 384;
 
 pub struct Client {
@@ -311,7 +313,8 @@ impl Client {
             accounts,
         );
         let transaction = Transaction::new_signed_with_payer(
-            &[i1, i2],
+            &[i1, i2],  // macos
+            // &[i1, i2],  // devcontainer
             Some(&self.payer.pubkey()),
             &[&self.payer],
             recent_hash,
